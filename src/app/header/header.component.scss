@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+
+#navbar {
+  background-color: $headerbackground-color;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item , .navbar-brand , .nav-link{
+  cursor: pointer;
+}
+
+.CartContainer {
+  width: 300px;
+  padding: 5px;
+}
+
+.dropdown-menu{
+  top: 100%;
+  left: unset !important;
+  right: 0px !important;
+  margin-top: var(--bs-dropdown-spacer);
+}
+
+.img-fluid {
+  height: 300px !important;
+}
+

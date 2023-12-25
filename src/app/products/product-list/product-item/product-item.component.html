@@ -1,1 +1,24 @@
-<p>product-item works!</p>
+<div class="container text-center">
+<div class="row row-cols-4">
+<div class="card col" style="width: 18rem;" *ngFor="let product of productsArray">
+  <img [src]="product.productImageUrl" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{product.productShortName}}</h5>
+    <p class="card-text">{{product.productDescription}}</p>
+    <div class="row">
+      <div class="col">
+        <p><del>100$</del><span class="float-left">  {{product.productPrice}}$</span></p>
+      </div>
+      <div class="col">
+        <span class="badge bg-danger rounded-pill float-end">20%</span>
+      </div>
+    </div>
+    <div class="row">
+      <a class="btn btn-success btn-sm">Add</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
